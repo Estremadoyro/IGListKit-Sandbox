@@ -15,9 +15,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let scene = (scene as? UIWindowScene) else { return }
+    let collectionFactory = CollectionViewFactory()
+    let igListKitCollection = collectionFactory.getCollection(.iglistkit)
+    let nativeCollection = collectionFactory.getCollection(.native)
+
+    let collectionsVCs: [UIViewController] = [
+      UINavigationController(rootViewController: igListKitCollection),
+      UINavigationController(rootViewController: nativeCollection),
+    ]
+
+    let tabBarController = UITabBarController()
+    tabBarController.setViewControllers(collectionsVCs, animated: false)
+    tabBarController.tabBar.backgroundColor = UIColor.white
+    tabBarController.tabBar.tintColor = UIColor.systemPink
+
     window = UIWindow(frame: scene.coordinateSpace.bounds)
     window?.windowScene = scene
-    window?.rootViewController = ViewController()
+    window?.rootViewController = tabBarController
     window?.makeKeyAndVisible()
   }
 

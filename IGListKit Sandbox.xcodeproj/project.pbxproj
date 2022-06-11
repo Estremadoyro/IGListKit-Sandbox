@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		A79DE8D42852E1B00050938A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DE8D32852E1B00050938A /* AppDelegate.swift */; };
 		A79DE8D62852E1B00050938A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DE8D52852E1B00050938A /* SceneDelegate.swift */; };
-		A79DE8D82852E1B00050938A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DE8D72852E1B00050938A /* ViewController.swift */; };
+		A79DE8D82852E1B00050938A /* IGListKitCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79DE8D72852E1B00050938A /* IGListKitCollectionController.swift */; };
 		A79DE8DD2852E1B10050938A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79DE8DC2852E1B10050938A /* Assets.xcassets */; };
 		A79DE8E02852E1B10050938A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79DE8DE2852E1B10050938A /* LaunchScreen.storyboard */; };
+		A7D0F6F8285539960003709B /* NativeCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F6F7285539960003709B /* NativeCollectionController.swift */; };
+		A7D0F6FB28553ED60003709B /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F6FA28553ED60003709B /* Ad.swift */; };
+		A7D0F6FD28553EDF0003709B /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F6FC28553EDF0003709B /* AdCell.swift */; };
+		A7D0F6FF28554B090003709B /* CollectionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D0F6FE28554B090003709B /* CollectionViewFactory.swift */; };
 		C3DEECFF3D8EC7565149F22C /* Pods_IGListKit_Sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C76C0E40AF523D0CCD1EA0B /* Pods_IGListKit_Sandbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,10 +26,14 @@
 		A79DE8D02852E1B00050938A /* IGListKit Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IGListKit Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A79DE8D32852E1B00050938A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A79DE8D52852E1B00050938A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A79DE8D72852E1B00050938A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A79DE8D72852E1B00050938A /* IGListKitCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListKitCollectionController.swift; sourceTree = "<group>"; };
 		A79DE8DC2852E1B10050938A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A79DE8DF2852E1B10050938A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A79DE8E12852E1B10050938A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7D0F6F7285539960003709B /* NativeCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeCollectionController.swift; sourceTree = "<group>"; };
+		A7D0F6FA28553ED60003709B /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		A7D0F6FC28553EDF0003709B /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		A7D0F6FE28554B090003709B /* CollectionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +79,24 @@
 			children = (
 				A79DE8D32852E1B00050938A /* AppDelegate.swift */,
 				A79DE8D52852E1B00050938A /* SceneDelegate.swift */,
-				A79DE8D72852E1B00050938A /* ViewController.swift */,
+				A7D0F6F928553EBD0003709B /* Main */,
 				A79DE8DC2852E1B10050938A /* Assets.xcassets */,
 				A79DE8DE2852E1B10050938A /* LaunchScreen.storyboard */,
 				A79DE8E12852E1B10050938A /* Info.plist */,
 			);
 			path = "IGListKit Sandbox";
+			sourceTree = "<group>";
+		};
+		A7D0F6F928553EBD0003709B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A79DE8D72852E1B00050938A /* IGListKitCollectionController.swift */,
+				A7D0F6F7285539960003709B /* NativeCollectionController.swift */,
+				A7D0F6FA28553ED60003709B /* Ad.swift */,
+				A7D0F6FC28553EDF0003709B /* AdCell.swift */,
+				A7D0F6FE28554B090003709B /* CollectionViewFactory.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		D3EB690BC9F60D6FF496D77E /* Pods */ = {
@@ -85,7 +105,6 @@
 				02B67CFD93141FCD303596E0 /* Pods-IGListKit Sandbox.debug.xcconfig */,
 				2B0047771DD762BA6C062A8F /* Pods-IGListKit Sandbox.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -203,8 +222,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A79DE8D82852E1B00050938A /* ViewController.swift in Sources */,
+				A7D0F6FD28553EDF0003709B /* AdCell.swift in Sources */,
+				A7D0F6FF28554B090003709B /* CollectionViewFactory.swift in Sources */,
+				A7D0F6F8285539960003709B /* NativeCollectionController.swift in Sources */,
+				A79DE8D82852E1B00050938A /* IGListKitCollectionController.swift in Sources */,
 				A79DE8D42852E1B00050938A /* AppDelegate.swift in Sources */,
+				A7D0F6FB28553ED60003709B /* Ad.swift in Sources */,
 				A79DE8D62852E1B00050938A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
