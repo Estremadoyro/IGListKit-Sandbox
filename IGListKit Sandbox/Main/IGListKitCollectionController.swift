@@ -43,7 +43,7 @@ final class IGListKitCollectionController: UIViewController, CollectionView {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = UIColor.systemGray
+    view.backgroundColor = UIColor.systemPink
     navigationItem.title = "IGListKit Collection"
     configureUI()
     configureCollection()
